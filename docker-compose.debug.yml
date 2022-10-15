@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  webluna:
+    image: webluna
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: development
+    ports:
+      - 8000:8000
+      - 9229:9229
+    command: 
+      - |
+        npm run build
+        node --inspect=0.0.0.0:9229 app.ts

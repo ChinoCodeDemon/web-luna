@@ -1,0 +1,31 @@
+:root{
+    --button-color: rgb(0, 102, 255);
+}
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main{
+    margin: 2em;
+}
+
+.button{
+    display: inline-block;
+    border-radius: 1em;
+    padding: 1em;
+    background-color: var(--button-color);
+    border: 3px solid var(--button-color);
+    color: white;
+    text-decoration: none;
+
+    transition: 0.5s ease-out background-color;
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+}
+
+.nodec{
+    list-style: none;
+}
