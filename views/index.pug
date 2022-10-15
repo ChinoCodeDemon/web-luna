@@ -1,27 +1,3 @@
 extends layout.pug
 block main
-    h1 Welcome to my webpage.
-    p
-    |   On this webpage you will find out about my projects, my hobbies and who I actually am.
-    |   I won't write my full official name in this webpage, because of privacy reasons.
-    |   On assumtion that those I lead to this page already know my name, I will first summarise my projects.
-    h2 My projects 
-    p 
-    |   I am currently working on a collection page, because It is not running on server in this moment I am just putting here a link to Github.
-    |   The count of repos is bigger than the actual projects, because of prototypes and forks.
-    |   Most forks were created to make helpful pullrequests, so they are also part of things that I did.
-    ul.nodec
-        li
-            a(href="https://github.com/ChinoCodeDemon", class="button") GitHub Account
-    h2 My hobbies 
-    ul
-        li Cooking
-        li drawing of Mangas
-        li Video Games
-    h2 What games do I play?
-    p
-    | Since the answer will change all the time, it would be better for me to just link my steam account.
-    | I play some single player games and also multiplayer games, my favourite game is Darksouls.
-    ul.nodec
-        li
-            a(href="https://steamcommunity.com/id/psycodevelop/", class="button") Steam Account
+    include:marked ../AboutMe.md

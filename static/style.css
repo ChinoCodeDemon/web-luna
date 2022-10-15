@@ -9,7 +9,7 @@ main{
     margin: 2em;
 }
 
-.button{
+li a{
     display: inline-block;
     border-radius: 1em;
     padding: 1em;
@@ -18,10 +18,12 @@ main{
     color: white;
     text-decoration: none;
 
+    margin-left: -2em;
+
     transition: 0.5s ease-out background-color;
 }
 
-.button:hover{
+li a:hover{
     background-color: white;
     color: black;
 }
@@ -32,4 +34,8 @@ main{
 
 .nodec li{
     margin: 0.2em;
+}
+
+li{
+
 }
